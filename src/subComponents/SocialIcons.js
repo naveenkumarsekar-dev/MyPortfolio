@@ -67,7 +67,7 @@ const SocialIcons = (props) => {
           <a
             style={{ color: "inherit" }}
             target="_blank"
-            href={"https://www.linkedin.com/in/naveen-kumar-42a8b0314/"}
+            href={"https://www.linkedin.com/in/naveen-kumar-s-42a8b0314/"}
             rel="noreferrer noopener"
           >
             <svg
