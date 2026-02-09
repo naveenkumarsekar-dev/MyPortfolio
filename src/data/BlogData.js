@@ -6,7 +6,7 @@ export const Blogs = [
         name:"World Happiness Machine Learning Website.The platform is designed to aid researchers and policymakers in understanding the determinants of happiness globally.",
         tags:["machine learning", "data analysis", "visualization", "happiness", "prediction"],
         date:"13 Nov, 2023",
-        imgSrc:"https://raw.githubusercontent.com/NaveenDeveloperR/happinesspredictor-repo/main/HappinessPredictor%20Images/Screenshot%202024-11-17%20153833.png",
+        imgSrc:"https://raw.githubusercontent.com/naveenkumarsekar-dev/happinesspredictor-repo/main/HappinessPredictor%20Images/Screenshot%202024-11-17%20153833.png",
         link:"https://happinesspredictor.pythonanywhere.com/"
     },
     {
@@ -14,7 +14,7 @@ export const Blogs = [
         name:"Inquisitive AI Web Application. Inquisitive AI is a powerful Streamlit application,It leverages Google Generative AI to automatically generate insightful questions from input text. (MULTI LANGUAGE QUESTION GENERATOR)",
         tags:["AIPoweredLearning","QuestionGeneration","GoogleGenerativeAI"],
         date:"5 Jan, 2024",
-        imgSrc:"https://raw.githubusercontent.com/NaveenDeveloperR/inquisitive-streamlit-app/ea4c169233d55e33658e210b3068b4ac6bca44df/Output_Images/english.png",
+        imgSrc:"https://raw.githubusercontent.com/naveenkumarsekar-dev/inquisitive-streamlit-app/ea4c169233d55e33658e210b3068b4ac6bca44df/Output_Images/english.png",
         link:"https://inquisitive.streamlit.app"
     },
     {
@@ -22,7 +22,7 @@ export const Blogs = [
         name:"Full-Stack Inventory Management with React, Express, and MongoDB. It enables efficient sales tracking, user management, and the generation of printable bills, providing a seamless solution for businesses to manage their operations.",
         tags:["inventorymanagement","inventorytracking","salestracking"],
         date:"6 July, 2024",
-        imgSrc:"https://raw.githubusercontent.com/NaveenDeveloperR/inventory_management_mern/main/Inventory%20Management%20Images/Screenshot%202024-11-17%20161705.png",
+        imgSrc:"https://raw.githubusercontent.com/naveenkumarsekar-dev/inventory_management_mern/main/Inventory%20Management%20Images/Screenshot%202024-11-17%20161705.png",
         link:"https://inventory-management-mern.vercel.app"
     },
     {
@@ -30,8 +30,8 @@ export const Blogs = [
         name:"ChatGenie: AI-Powered Chatbot with GPT-3 Integration. ChatGenie is powered by OpenAI's GPT-3 model, designed to engage users in intelligent, natural conversations",
         tags:["aichatbot","openai","webchatbot"],
         date:"26 May, 2023",
-        imgSrc:"https://raw.githubusercontent.com/NaveenDeveloperR/chatbot-project/03825846e362ae1fb3d73ead3d647a2d91878d65/chatbot.png",
-        link:"https://github.com/NaveenDeveloperR/chatbot-project"
+        imgSrc:"https://raw.githubusercontent.com/naveenkumarsekar-dev/chatbot-project/03825846e362ae1fb3d73ead3d647a2d91878d65/chatbot.png",
+        link:"https://github.com/naveenkumarsekar-dev/chatbot-project"
     },
     // {
     //     id:5,
