@@ -140,7 +140,7 @@ const MobileView = () => {
             width: '40px',
             height: '40px',
             border: '4px solid #f3f3f3',
-            borderTop: '4px solid #b820e6',
+            borderTop: '4px solid #000',
             borderRadius: '50%',
             animation: 'spin 1s linear infinite',
             margin: '0 auto 20px'
