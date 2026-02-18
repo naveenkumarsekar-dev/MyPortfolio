@@ -2,7 +2,7 @@ import React, { useRef, useState,useEffect} from 'react'
 import styled, { keyframes } from 'styled-components'
 // import { useLocation } from 'react-router-dom'; // Import useLocation for route changes
 
-import music from "../assets/audio/ordinaryperson.mp3"
+import music from "../assets/audio/Our Cycle.mp3"
 
 const Box = styled.div`
 display:flex;
@@ -62,14 +62,14 @@ const SoundBar = ({ clickcount }) => {
         if (clickcount === 1 && !hasInitialized.current) {
             setClick(true);
             if (ref.current) {
-                ref.current.currentTime = 4; // Skip first 4 seconds
+                ref.current.currentTime = 4; // START TIME: Skip to the 4th second (adjust as needed)
                 ref.current.volume = 0; // Start with volume 0
                 ref.current.play();
                 
-                // Fade in over 2 seconds
+                // Fade in to 5% volume over 2 seconds (very subtle)
                 const fadeAudio = setInterval(() => {
-                    if (ref.current.volume < 1) {
-                        ref.current.volume = Math.min(ref.current.volume + 0.1, 1);
+                    if (ref.current.volume < 0.05) {
+                        ref.current.volume = Math.min(ref.current.volume + 0.005, 0.05);
                     } else {
                         clearInterval(fadeAudio);
                     }
@@ -110,10 +110,10 @@ const SoundBar = ({ clickcount }) => {
             ref.current.volume = 0; // Start with volume 0
             ref.current.play();
             
-            // Fade in when manually clicking
+            // Fade in to 5% volume when manually clicking (very subtle)
             const fadeAudio = setInterval(() => {
-                if (ref.current.volume < 1) {
-                    ref.current.volume = Math.min(ref.current.volume + 0.1, 1);
+                if (ref.current.volume < 0.05) {
+                    ref.current.volume = Math.min(ref.current.volume + 0.005, 0.05);
                 } else {
                     clearInterval(fadeAudio);
                 }
