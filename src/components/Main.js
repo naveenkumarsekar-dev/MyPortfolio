@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 import styled, { keyframes } from 'styled-components'
 import LogoComponent from '../subComponents/LogoComponent'
@@ -7,6 +7,7 @@ import PowerButton from '../subComponents/PowerButton'
 import SocialIcons from '../subComponents/SocialIcons'
 import { YinYang } from './AllSvgs'
 import Intro from './Intro'
+import MobileView from './MobileView'
     ;
 
 
@@ -129,10 +130,27 @@ transition: height 0.5s ease, width 1s ease 0.5s;
 const Main = ({ clickcount, setClickcount }) => {
 
     const [click, setClick] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const checkMobile = () => {
+            setIsMobile(window.innerWidth <= 768);
+        };
+        
+        checkMobile();
+        window.addEventListener('resize', checkMobile);
+        
+        return () => window.removeEventListener('resize', checkMobile);
+    }, []);
 
     const handleClick = () => {
         setClickcount(clickcount + 1);  // Increment clickcount
         setClick(!click);
+    }
+
+    // Render mobile view for mobile devices
+    if (isMobile) {
+        return <MobileView />;
     }
 
     return (

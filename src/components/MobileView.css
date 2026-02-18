@@ -1,0 +1,131 @@
+/* Mobile.css is loaded dynamically in MobileView.js component */
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom animations that might not be in Tailwind */
+@keyframes spin_slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-spin_slow {
+  animation: spin_slow 6s linear infinite;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s ease-out;
+}
+
+/* Grid auto-fit columns */
+.grid-cols-auto {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+/* Custom hover effects */
+.hover\:shadow-black:hover {
+  box-shadow: 4px 4px 0 #000;
+}
+
+.dark .dark\:hover\:shadow-white\/80:hover {
+  box-shadow: 4px 4px 0 rgba(255, 255, 255, 0.8);
+}
+
+/* Custom colors */
+.bg-lightHover {
+  background-color: #fcf4ff;
+}
+
+.dark .dark\:bg-darkHover {
+  background-color: #2a004a;
+}
+
+.dark .dark\:bg-darkHover\/50 {
+  background-color: rgba(42, 0, 74, 0.5);
+}
+
+.dark .dark\:bg-darkHover\/30 {
+  background-color: rgba(42, 0, 74, 0.3);
+}
+
+.dark .dark\:bg-darkTheme {
+  background-color: #11001F;
+}
+
+.dark .dark\:text-white {
+  color: #fff;
+}
+
+.dark .dark\:text-white\/80 {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.dark .dark\:border-white\/30 {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.dark .dark\:border-white\/25 {
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.dark .dark\:shadow-white\/20 {
+  box-shadow: 0 1px 3px 0 rgba(255, 255, 255, 0.2), 0 1px 2px -1px rgba(255, 255, 255, 0.2);
+}
+
+/* Mobile menu transition */
+#mobileMenu {
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Hover effects */
+.hover\:bg-slate-100\/70:hover {
+  background-color: rgba(241, 245, 249, 0.7);
+}
+
+.hover\:text-gray-500:hover {
+  color: #6b7280;
+}
+
+.dark .dark\:hover\:text-gray-300:hover {
+  color: #d1d5db;
+}
+
+.dark .dark\:hover\:bg-darkHover:hover {
+  background-color: #2a004a;
+}
+
+/* Group hover effects */
+.group:hover .group-hover\:bottom-7 {
+  bottom: 1.75rem;
+}
+
+.group:hover .group-hover\:bg-lime-300 {
+  background-color: #bef264;
+}
+
+/* Backdrop blur */
+.backdrop-blur-lg {
+  backdrop-filter: blur(16px);
+}
+
+/* Ensure proper font families */
+.font-Outfit {
+  font-family: 'Outfit', sans-serif;
+}
+
+.font-Ovo {
+  font-family: 'Ovo', serif;
+}

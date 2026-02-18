@@ -83,7 +83,7 @@ const Intro = () => {
       <SubBox>
         <Text mustard={mustard}>
           <h1>Hi,</h1>
-          <h3>I'm Naveen Kumar.</h3>
+          <h3>I'm <span style={{ whiteSpace: 'nowrap' }}>Naveen Kumar S.</span></h3>
           <h6>I build apps that make life easier.</h6>
         </Text>
       </SubBox>
