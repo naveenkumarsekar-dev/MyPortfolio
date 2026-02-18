@@ -41,6 +41,7 @@ const MobileView = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [navbarScrolled, setNavbarScrolled] = useState(false);
   const [formStatus, setFormStatus] = useState('idle'); // idle, submitting, success, error
+  const [cssLoaded, setCssLoaded] = useState(false);
 
   useEffect(() => {
     // Load mobile.css dynamically
@@ -48,6 +49,7 @@ const MobileView = () => {
     link.rel = 'stylesheet';
     link.href = `${process.env.PUBLIC_URL}/mobile.css`;
     link.id = 'mobile-tailwind-css';
+    link.onload = () => setCssLoaded(true);
     document.head.appendChild(link);
 
     // Check for saved theme preference or system preference
@@ -121,6 +123,33 @@ const MobileView = () => {
       setTimeout(() => setFormStatus('idle'), 5000);
     }
   };
+
+  // Loading screen while CSS loads
+  if (!cssLoaded) {
+    return (
+      <div style={{ 
+        display: 'flex', 
+        alignItems: 'center', 
+        justifyContent: 'center', 
+        height: '100vh', 
+        backgroundColor: '#fff',
+        fontFamily: 'Outfit, sans-serif'
+      }}>
+        <div style={{ textAlign: 'center' }}>
+          <div style={{
+            width: '40px',
+            height: '40px',
+            border: '4px solid #f3f3f3',
+            borderTop: '4px solid #b820e6',
+            borderRadius: '50%',
+            animation: 'spin 1s linear infinite',
+            margin: '0 auto 20px'
+          }}></div>
+          <p style={{ color: '#666', fontSize: '14px' }}>Loading...</p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="font-Outfit leading-8 dark:bg-darkTheme dark:text-white">

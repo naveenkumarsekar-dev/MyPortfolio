@@ -5,6 +5,12 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Loading spinner animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 /* Custom animations that might not be in Tailwind */
 @keyframes spin_slow {
   from { transform: rotate(0deg); }
