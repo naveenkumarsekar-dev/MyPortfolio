@@ -200,7 +200,7 @@ const MobileView = () => {
 
           <li><a href="#top" onClick={closeMenu}>Home</a></li>
           <li><a href="#about" onClick={closeMenu}>About me</a></li>
-          <li><a href="#services" onClick={closeMenu}>Services</a></li>
+          {/* <li><a href="#services" onClick={closeMenu}>Services</a></li> */}
           <li><a href="#work" onClick={closeMenu}>My Work</a></li>
           <li><a href="#contact" onClick={closeMenu}>Contact me</a></li>
         </ul>
