@@ -381,7 +381,7 @@ const MobileView = () => {
           <ul className="flex items-center gap-6 sm:gap-10 justify-center mt-4 sm:mt-0">
             <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/naveenkumarsekar-dev" className="hover:text-[#b820e6] transition">GitHub</a></li>
             <li><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/naveen-kumar-s-42a8b0314/" className="hover:text-[#b820e6] transition">LinkedIn</a></li>
-            <li><a target="_blank" rel="noopener noreferrer" href="https://leetcode.com/u/naveenkumar____/" className="hover:text-[#b820e6] transition">LeetCode</a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://leetcode.com/u/naveenkumarsekar/" className="hover:text-[#b820e6] transition">LeetCode</a></li>
           </ul>
         </div>
       </div>
