@@ -134,7 +134,7 @@ const MySkillsPage = () => {
                         <Develope width={40} height={40} /> Full Stack Developer
                     </Title>
                     <Description>
-                        I value personal and professional growth, thus I enjoy taking on projects that help me learn and explore new technologies.
+                       I value personal and professional growth; therefore, I seek out projects that challenge me while allowing me to engage with new technologies.
                     </Description>
                     <Description>
                         <strong>Skills</strong>
