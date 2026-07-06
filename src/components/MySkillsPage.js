@@ -134,12 +134,12 @@ const MySkillsPage = () => {
                         <Develope width={40} height={40} /> Full Stack Developer
                     </Title>
                     <Description>
-                       I value personal and professional growth; thus I seek out projects that challenge me while allowing me to engage with new technologies.
+                       I seek challenging projects that foster growth and expose me to new technologies.
                     </Description>
                     <Description>
                         <strong>Skills</strong>
                         <p>
-                            Html, Css, Js, React, Express.js, Flutter,Flask etc.
+                            Html, Css, Js, React, Next.js,Express.js, Flutter,Flask etc.
                         </p>
                     </Description>
                     <Description>
